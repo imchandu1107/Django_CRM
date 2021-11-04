@@ -2,12 +2,20 @@
 {% load static %}
 {% block content %}
 
-    <form action="" method="POST">
+    <div class="row ms-auto">
+        <div class="col-md-6">
+            <div class="card card-body">
 
-        {% csrf_token %}
-        {{form}}
+                <form action="" method="POST">
 
-        <input type="submit" name="Submit">
-    </form>
+                    {% csrf_token %}
+                    {{form}}
+            
+                    <input type="submit" name="Submit">
+                </form>
+
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
