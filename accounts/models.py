@@ -39,7 +39,7 @@ class Order(models.Model):
     STATUS = (
         ('Pending', 'Pending'),
         ('Out for Delivery', 'Out for Delivery'),
-        ('Delivered', 'Devivered'),
+        ('Delivered', 'Delivered'),
     )
 
     customer = models.ForeignKey(Customer, null=True, on_delete= models.SET_NULL)
